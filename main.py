@@ -1,12 +1,11 @@
 from random import *
 import time
 
-score = 0
 questions = [
     {
         "q": "who was to alex's right on 9/19/2024 at 2:12 pm", 
         "a": "hendrix",
-        "l": ["hendrix", "sohan", "grace", "lucian"]
+        "l": ["sohan", "grace", "lucian", "hendrix"]
     },
     {
         "q": "what is pokemon 150", 
@@ -16,45 +15,46 @@ questions = [
     {
         "q": "is hotdog a sandwich", 
         "a": "no",
-        "l": ["no", "yes", "maybe", "yessir"]
+        "l": ["yes", "maybe", "yessir", "no"]
     },
     {
         "q": "i want it", 
         "a": "that way",
-        "l": ["that way", "me too", "a lot", "cold"]
+        "l": ["me too", "that way", "a lot", "cold"]
     },
     {
         "q": "whos that guy who made that song", 
         "a": "gotye",
-        "l": ["gotye", "usher", "flo rida", "rihanna"]
+        "l": ["flo rida", "usher", "gotye", "rihanna"]
     },
     {
         "q": "whats the last name of the guy who made the turing machine",
         "a": "turing",
-        "l": ["turing", "alan", "smith", "zhang"]
+        "l": ["smith", "alan", "turing", "zhang"]
     },
     {"q": "did you get the photos printed?",
         "a": "bogos binted? 👽",
-        "l": ["bogos binted? 👽", "yes", "no", "sorry :("]
+        "l": ["yes", "bogos binted? 👽", "no", "sorry :("]
     },
     {
         "q": "cat or dog", 
         "a": "cat",
-        "l":  ["cat", "dog", "neither", "feline"]
+        "l":  ["dog", "cat", "neither", "feline"]
     },
     {
         "q": "yo sohan give me a question",
         "a": "what would sohan say if he was asked \"hey sohan give me a questions\"",
-        "l": ["what would sohan say if he was asked \"hey sohan give me a questions\"", "no", "shut up", "ok"]
+        "l": ["no", "shut up", "what would sohan say if he was asked \"hey sohan give me a questions\"", "ok"]
     },
     {
         "q": "what would sohan say if he was asked \"hey sohan give me a questions\"",
-        "a": "idk",
+        "a": "not answering it",
         "l": ["idk", "what would sohan say if he was asked \"hey sohan give me a questions\"", "cheeseburger", "not answering it"]
     },
 ]
 
 def main():
+    score = 0
     while True:
         randKeyNum = randrange(10)
         print(questions[randKeyNum]["q"])
@@ -62,7 +62,8 @@ def main():
             print(item)
         answer = input()
         if answer == questions[randKeyNum]["a"]:
-            print("yay!")
+            score += 1
+            print(f"yay! score: {score}")
             time.sleep(2)
         else:
             break
