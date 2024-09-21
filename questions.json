@@ -1,0 +1,62 @@
+{
+    "1": 
+    {
+        "q": "who was to alex's right on 9/19/2024 at 2:12 pm", 
+        "a": "hendrix",
+        "l": ["sohan", "grace", "lucian", "hendrix"]
+    },
+    "2": 
+    {
+        "q": "what is pokemon 150", 
+        "a": "mew",
+        "l": ["mew", "mewtwo", "moltres", "dragonite"]
+    },
+    "3": 
+    {
+        "q": "is hotdog a sandwich", 
+        "a": "no",
+        "l": ["yes", "maybe", "yessir", "no"]
+    },
+    "4": 
+    {
+        "q": "i want it", 
+        "a": "that way",
+        "l": ["me too", "that way", "a lot", "cold"]
+    },
+    "5": 
+    {
+        "q": "whos that guy who made that song", 
+        "a": "gotye",
+        "l": ["flo rida", "usher", "gotye", "rihanna"]
+    },
+    "6": 
+    {
+        "q": "whats the last name of the guy who made the turing machine",
+        "a": "turing",
+        "l": ["smith", "alan", "turing", "zhang"]
+    },
+    "7": 
+    {
+        "q": "did you get the photos printed?",
+        "a": "bogos binted? 👽",
+        "l": ["yes", "bogos binted? 👽", "no", "sorry :("]
+    },
+    "8": 
+    {
+        "q": "cat or dog", 
+        "a": "cat",
+        "l":  ["dog", "cat", "neither", "feline"]
+    },
+    "9": 
+    {
+        "q": "yo sohan give me a question",
+        "a": "what would sohan say if he was asked \"hey sohan give me a question\"",
+        "l": ["no", "shut up", "what would sohan say if he was asked \"hey sohan give me a question\"", "ok"]
+    },
+    "10": 
+    {
+        "q": "what would sohan say if he was asked \"hey sohan give me a question\"",
+        "a": "not answering it",
+        "l": ["idk", "what would sohan say if he was asked \"hey sohan give me a questions\"", "cheeseburger", "not answering it"]
+    }
+}
