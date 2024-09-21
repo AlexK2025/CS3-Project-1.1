@@ -43,17 +43,24 @@ questions = [
     },
     {
         "q": "yo sohan give me a question",
-        "a": "what would sohan say if he was asked \"hey sohan give me a questions\"",
-        "l": ["no", "shut up", "what would sohan say if he was asked \"hey sohan give me a questions\"", "ok"]
+        "a": "what would sohan say if he was asked \"hey sohan give me a question\"",
+        "l": ["no", "shut up", "what would sohan say if he was asked \"hey sohan give me a question\"", "ok"]
     },
     {
-        "q": "what would sohan say if he was asked \"hey sohan give me a questions\"",
+        "q": "what would sohan say if he was asked \"hey sohan give me a question\"",
         "a": "not answering it",
         "l": ["idk", "what would sohan say if he was asked \"hey sohan give me a questions\"", "cheeseburger", "not answering it"]
     },
 ]
 
+def back(num):
+    i = 0
+    while i < num:
+        print('\033[F\33[2K', end='')
+        i+=1
+
 def main():
+    back(2)
     score = 0
     while True:
         randKeyNum = randrange(10)
@@ -63,10 +70,13 @@ def main():
         answer = input()
         if answer == questions[randKeyNum]["a"]:
             score += 1
+            back(6)
             print(f"yay! score: {score}")
             time.sleep(2)
         else:
             break
-        print('\033[F\33[2K\033[F\33[2K\033[F\33[2K\033[F\33[2K\033[F\33[2K\033[F\33[2K\033[F\33[2K\033[F\33[2K\033[F\33[2K\033[F')
+        back(7)
+    back(6)
+    print(f"YOU SUCK!!! final score: {score}")
 if __name__ == "__main__":
     main()
