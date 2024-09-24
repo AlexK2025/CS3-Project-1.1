@@ -1,9 +1,9 @@
-from random import *
-import time
-import json
+from random import randrange
+from time import sleep
+from json import load
 
-with open("questions.json", "r") as f:
-    questions = json.load(f)
+with open("questions.json", 'r') as f:
+    questions = load(f)
 
 def back(num):
     for i in range(num):
@@ -24,7 +24,7 @@ def main():
         score += 1
         back(6)
         print(f"yay! score: {score}")
-        time.sleep(2)
+        sleep(2)
     back(6)
     print(f"YOU SUCK!!! final score: {score}")
 
