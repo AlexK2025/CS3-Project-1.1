@@ -61,7 +61,7 @@
     },
     "11":
     {
-        "q": "what's my battery percent right now",
+        "q": "what's my battery percent right now (when i wrote this)",
         "a": "79%",
         "l": ["79%", "83%", "24%", "57%"]
     },

@@ -13,12 +13,14 @@ def main():
     back(2)
     score = 0
     while True:
-        back(1)
+        back(2)
         key = f"{randrange(13) + 1}"
         print(questions[key]["q"])
         shuffle(questions[key]["l"])
         for item in questions[key]["l"]:
-            print(item)
+            if (item == 5):
+                print(score)
+            print(f"- {item}")
         answer = input()
         if answer != questions[key]["a"] or (questions[key]["q"] == "what's your current score?" and answer != score):
             break
